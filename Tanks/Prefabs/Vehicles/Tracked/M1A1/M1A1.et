@@ -1,0 +1,95 @@
+Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
+   Simulation Wheeled "{5E38B84FCEFFD739}" {
+    Gearbox Gearbox Gearbox {
+     Forward {
+      8 4 2 1.5
+     }
+    }
+    Axles {
+     Axle "{5E38B84FCEFFD72B}" {
+      Differential Differential Diff_02 {
+       Type LSD
+      }
+      Suspension Suspension "{4D8B26DF2B10AE05}" {
+       MaxTravelUp 0.3
+       MaxTravelDown 0.3
+      }
+      Wheel Wheel "{5CB63E75C3728451}" {
+       Radius 0.6
+      }
+     }
+     Axle "{5E38B84FCEFFD72D}" {
+      Differential Differential Diff_03 {
+       Type LSD
+      }
+      Suspension Suspension "{5B3A8D44B1452858}" {
+       MaxTravelUp 0.3
+       MaxTravelDown 0.3
+      }
+      Wheel Wheel "{5CB63E75CEABD61F}" {
+      }
+     }
+     Axle "{5E38B84FCEFFD72E}" {
+      Differential Differential Diff_04 {
+       Type LSD
+      }
+      Suspension Suspension "{5B3A8D44BDC38472}" {
+       MaxTravelUp 0.3
+       MaxTravelDown 0.3
+      }
+      Wheel Wheel "{5CB63E75CB21F1B9}" {
+      }
+     }
+     Axle "{5E38B84FCEFFD720}" {
+      Differential Differential Diff_05 {
+       Type LSD
+      }
+      Suspension Suspension "{5B3A8D44B986A4EB}" {
+       MaxTravelUp 0.3
+       MaxTravelDown 0.3
+      }
+      Wheel Wheel "{5CB63E75D5F89198}" {
+      }
+     }
+     Axle "{5E38B84FCEFFD721}" {
+      Differential Differential Diff_06 {
+       Type LSD
+      }
+      Suspension Suspension "{5B3A8D448659D92F}" {
+       MaxTravelUp 0.3
+       MaxTravelDown 0.3
+      }
+      Wheel Wheel "{5CB63E75D071A4F0}" {
+      }
+     }
+     Axle "{5E38B84FCEFFD722}" {
+      Differential Differential Diff_07 {
+       Type LSD
+      }
+      Suspension Suspension "{5B3A8D44825ECF19}" {
+       MaxTravelUp 0.3
+       MaxTravelDown 0.3
+      }
+      Wheel Wheel "{5CB63E75D2E13AEA}" {
+      }
+     }
+     Axle "{5E38B84FCEFFD723}" {
+      Differential Differential Diff_08 {
+       Type LSD
+      }
+      Suspension Suspension "{5B3A8D448D7BA280}" {
+       MaxTravelUp 0.3
+       MaxTravelDown 0.3
+      }
+      Wheel Wheel "{5CB63E75DCEE0AF8}" {
+      }
+     }
+    }
+   }
+  }
+ }
+ coords 0 4.062 1.504
+}
