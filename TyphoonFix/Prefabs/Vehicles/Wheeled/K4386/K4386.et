@@ -1,0 +1,14 @@
+Vehicle : "{863A65C2E3330F2F}Prefabs/Vehicles/Wheeled/K4386/K4386_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
+   Simulation Wheeled "{4D8B26DEA5F25978}" {
+    Axles {
+     Axle "{4D8B26DF957A8E1C}" {
+      HasHandbrake 1
+     }
+    }
+   }
+  }
+ }
+}
