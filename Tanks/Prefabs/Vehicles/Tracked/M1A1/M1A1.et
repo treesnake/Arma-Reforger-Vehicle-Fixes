@@ -3,15 +3,68 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
  components {
   VehicleWheeledSimulation "{731B26FCA2F19855}" {
    Simulation Wheeled "{5E38B84FCEFFD739}" {
+    Engine Engine Engine {
+     Inertia 20
+     MaxPower 9000
+     MaxTorque 10000
+     RpmMaxPower 3300
+     RpmMaxTorque 2200
+     Steepness 50
+     Friction 176
+     RpmRedline 3650
+     RpmMax 5000
+    }
     Gearbox Gearbox Gearbox {
      Forward {
-      8 4 2 1.5
+      10 9 8 7 4.3 4.1 3.9 3.5 3.2 3 2.8 2.5 2 1.7 1.3
+     }
+     Output "Diff_Master"
+    }
+    Differentials {
+     Differential Diff_02_03 {
+      Type Locked
+      Output0 "Diff_02"
+      Output1 "Diff_03"
+     }
+     Differential Diff_04_05 {
+      Type Locked
+      Output0 "Diff_04"
+      Output1 "Diff_05"
+     }
+     Differential Diff_06_07 {
+      Type Locked
+      Output0 "Diff_06"
+      Output1 "Diff_07"
+     }
+     Differential Diff_08 {
+      Type Locked
+      Output0 "Diff_08"
+     }
+     Differential Diff_Front {
+      Type Locked
+      Ratio 6
+      Output0 "Diff_02_03"
+      Output1 "Diff_04_05"
+     }
+     Differential Diff_Rear {
+      Type Locked
+      Ratio 6
+      Output0 "Diff_06_07"
+      Output1 "Diff_08"
+     }
+     Differential Diff_Master {
+      Type Locked
+      Ratio 6
+      Output0 "Diff_Front"
+      Output1 "Diff_Rear"
      }
     }
     Axles {
      Axle "{5E38B84FCEFFD72B}" {
+      TorqueShare 0
       Differential Differential Diff_02 {
        Type LSD
+       Ratio 6
       }
       Suspension Suspension "{4D8B26DF2B10AE05}" {
        MaxTravelUp 0.3
@@ -20,10 +73,19 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       Wheel Wheel "{5CB63E75C3728451}" {
        Radius 0.6
       }
+      Tyre Tyre "{5CB63E75CCA2638C}" {
+       Roughness 0.2
+       LongitudinalFriction 1.5
+       LateralFriction 0.3
+       RollingResistance 6
+       Tread 1
+      }
      }
      Axle "{5E38B84FCEFFD72D}" {
+      TorqueShare 0.5
       Differential Differential Diff_03 {
        Type LSD
+       Ratio 6
       }
       Suspension Suspension "{5B3A8D44B1452858}" {
        MaxTravelUp 0.3
@@ -31,10 +93,19 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75CEABD61F}" {
       }
+      Tyre Tyre "{5CB63E75C97DC023}" {
+       Roughness 0.2
+       LongitudinalFriction 1.5
+       LateralFriction 3
+       RollingResistance 6
+       Tread 1
+      }
      }
      Axle "{5E38B84FCEFFD72E}" {
+      TorqueShare 0.5
       Differential Differential Diff_04 {
        Type LSD
+       Ratio 6
       }
       Suspension Suspension "{5B3A8D44BDC38472}" {
        MaxTravelUp 0.3
@@ -42,10 +113,19 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75CB21F1B9}" {
       }
+      Tyre Tyre "{5CB63E75CBE6B18C}" {
+       Roughness 0.2
+       LongitudinalFriction 1.5
+       LateralFriction 3
+       RollingResistance 6
+       Tread 1
+      }
      }
      Axle "{5E38B84FCEFFD720}" {
+      TorqueShare 0.5
       Differential Differential Diff_05 {
        Type LSD
+       Ratio 6
       }
       Suspension Suspension "{5B3A8D44B986A4EB}" {
        MaxTravelUp 0.3
@@ -53,10 +133,19 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75D5F89198}" {
       }
+      Tyre Tyre "{5CB63E75D69ADDFC}" {
+       Roughness 0.2
+       LongitudinalFriction 1.5
+       LateralFriction 3
+       RollingResistance 6
+       Tread 1
+      }
      }
      Axle "{5E38B84FCEFFD721}" {
+      TorqueShare 0.5
       Differential Differential Diff_06 {
        Type LSD
+       Ratio 6
       }
       Suspension Suspension "{5B3A8D448659D92F}" {
        MaxTravelUp 0.3
@@ -64,10 +153,19 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75D071A4F0}" {
       }
+      Tyre Tyre "{5CB63E75D12E4D3B}" {
+       Roughness 0.2
+       LongitudinalFriction 1.5
+       LateralFriction 3
+       RollingResistance 6
+       Tread 1
+      }
      }
      Axle "{5E38B84FCEFFD722}" {
+      TorqueShare 0.5
       Differential Differential Diff_07 {
        Type LSD
+       Ratio 6
       }
       Suspension Suspension "{5B3A8D44825ECF19}" {
        MaxTravelUp 0.3
@@ -75,8 +173,16 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       }
       Wheel Wheel "{5CB63E75D2E13AEA}" {
       }
+      Tyre Tyre "{5CB63E75D3856777}" {
+       Roughness 0.2
+       LongitudinalFriction 1.5
+       LateralFriction 3
+       RollingResistance 6
+       Tread 1
+      }
      }
      Axle "{5E38B84FCEFFD723}" {
+      TorqueShare 0.5
       Differential Differential Diff_08 {
        Type LSD
       }
@@ -85,6 +191,13 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
        MaxTravelDown 0.3
       }
       Wheel Wheel "{5CB63E75DCEE0AF8}" {
+      }
+      Tyre Tyre "{5CB63E75DD9EE3FC}" {
+       Roughness 0.2
+       LongitudinalFriction 1.5
+       LateralFriction 3
+       RollingResistance 6
+       Tread 1
       }
      }
     }
