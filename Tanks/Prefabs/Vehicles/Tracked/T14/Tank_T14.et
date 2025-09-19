@@ -1,3 +1,59 @@
 RHS_Tank : "{B744E85A9CE90F7D}Prefabs/Vehicles/Tracked/T14/Tank_T14_base.et" {
  ID "61B56109CDF9B97F"
+ components {
+  SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+   "Additional hit zones" {
+    SCR_FlammableHitZone Hull {
+     MaxHealth 16000
+     DamageReduction 90
+     m_fIncendiaryReduction 5
+     m_fFireDamageOccupants 1
+     m_fMinFireBurningTime 40
+     m_fMaxFireBurningTime 160
+     m_fBurningTime 120
+    }
+    SCR_GearboxHitZone GearBox {
+     DamageReduction 5
+     "Collision multiplier" 0.25
+     "Melee multiplier" 0
+     "Fragmentation multiplier" 0.05
+     "Explosive multiplier" 0.2
+    }
+    SCR_VehicleHitZone AmmoRack {
+     ColliderNames {
+     }
+     ParentHZs {
+      ParentHitZone "{5EA76678EF176A4D}" {
+       DamageMultiplier 0
+       Overkill 0
+      }
+     }
+     BaseDamageMultiplier 0
+     CriticalDamage 1
+     "Kinetic multiplier" 0
+     "Fragmentation multiplier" 0
+     "Explosive multiplier" 0
+     "Incendiary multiplier" 0
+     "Fire multiplier" 0
+     "DamageState threshold" {
+     }
+     m_fFireMultiplier 0
+    }
+    SCR_VehicleHitZone Brains {
+     ColliderNames {
+     }
+     BaseDamageMultiplier 0
+     "Collision multiplier" 0
+     "Melee multiplier" 0
+     "Kinetic multiplier" 0
+     "Fragmentation multiplier" 0
+     "Explosive multiplier" 0
+     "Incendiary multiplier" 0
+     "Fire multiplier" 0
+    }
+   }
+   m_iExplosionDamageEjectionChance 0
+   m_iCollisionDamageEjectionChance 0
+  }
+ }
 }
