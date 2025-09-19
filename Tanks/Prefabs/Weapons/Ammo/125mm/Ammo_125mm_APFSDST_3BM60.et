@@ -1,0 +1,33 @@
+TracerProjectile : "{67FED88E5085F63F}Prefabs/Weapons/Core/Ammo_Bullet_Base.et" {
+ ID "476AE74C1F2F140D"
+ components {
+  CollisionTriggerComponent "{604C75D458B1A8E7}" {
+   Enabled 0
+   PROJECTILE_EFFECTS {
+    SubmunitionEffect "{64AECB1F06C2C98F}" {
+     Prefab "{0D46B76BBD86EC5C}Prefabs/Weapons/Ammo/Ammo_120x570/Warhead_AP_Spall_M829.et"
+    }
+   }
+  }
+  CollisionTriggerComponent "{6666F6587A055A04}" {
+   PROJECTILE_EFFECTS {
+    SpawnPrefabEffect "{6666F658755C6EF0}" {
+     TriggerOnce 1
+     EffectPrefab "{0D46B76BBD86EC5C}Prefabs/Weapons/Ammo/Ammo_120x570/Warhead_AP_Spall_M829.et"
+    }
+   }
+   DELETE_ON_TRIGGER 0
+  }
+  ShellMoveComponent "{851AA4A2AE0A5691}" {
+   ProjectileEffects {
+    ProjectileDamage "{6666F65DAF65D670}" {
+     DamageType Explosive
+     DamageEffects {
+      SCR_ExplosionDamageEffect "{6666F65DBE260609}" {
+      }
+     }
+    }
+   }
+  }
+ }
+}

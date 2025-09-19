@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{EB33480A62A31B04}Prefabs/Weapons/Magazines/2A82/Box_125mm_2A82_APFSDST_20rnd.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
