@@ -55,5 +55,13 @@ RHS_Tank : "{B744E85A9CE90F7D}Prefabs/Vehicles/Tracked/T14/Tank_T14_base.et" {
    m_iExplosionDamageEjectionChance 0
    m_iCollisionDamageEjectionChance 0
   }
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
+   Simulation Wheeled "{5CDE8068D4987FC8}" {
+    Engine Engine Engine {
+     MaxPower 9000
+     MaxTorque 10000
+    }
+   }
+  }
  }
 }
